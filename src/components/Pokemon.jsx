@@ -14,7 +14,6 @@ const Obtenerimagen= async () =>{
   try {
      const {data}= await axios(pokemon.url )
      const sprite= data.sprites.front_default
-     console.log(data)
      setimage(sprite)
   } catch (error) {
       console.log(error)
@@ -26,24 +25,24 @@ useEffect(() => {
 
   return (
     <Col md={6} lg={3}>
-      <Card className='mb-4'>
+      <Card className='mb-4' >
           <Card.Img
             variant='top'
             src={image}
             alt={`Imagen de ${pokemon.name}`}
           />
           <Card.Body>
-              <Card.Title>{pokemon.name}</Card.Title>
+              <Card.Title style={{textAlign: 'center'}}>{pokemon.name}</Card.Title>
 
-              <Button
-                variant={'warning'}
+              <Button 
+                variant={'info'}
                 className="w-100 text-uppercase mt-2"
                 onClick={ () => {
                     handleModalClick()
                     handlepokemonClick(pokemon.url)
                 }}
               >
-                Info
+                Información
               </Button>
           </Card.Body>
       </Card>

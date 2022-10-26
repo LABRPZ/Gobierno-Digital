@@ -1,14 +1,7 @@
 header{
-  background-color: rgb(201, 0, 157);
-  font-size: large;
-  color: rgb(224, 224, 9);
+  background-color: rgb(229, 147, 136);
+  font-size: xx-large;
+  color: rgb(255, 216, 101);
   text-align: center; 
   font-family: "Arial" ;
-}
-body{
-  background-color: rgb(75, 134, 224);
-}
-
-.tarjetas{
-  margin-top: 1rem;
 }
